@@ -11,3 +11,7 @@ def display_menu():
 
 def exit_message():
     print("-------\nProgram Ended, Visit Again !\n-------")
+    
+
+def len_error_message():
+    print("-------\nPassword length not within range(8,14).\n-------")
