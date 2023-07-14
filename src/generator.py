@@ -21,11 +21,8 @@ def pass_generator():
             password+=random.choice(string.ascii_letters)
     else :
         len_error_message()
-        return ""
+        exit(1)
     
     password = random_case(password)
     password = ''.join(random.sample(password, length))
     return password
-
-res = pass_generator()
-print(res)
