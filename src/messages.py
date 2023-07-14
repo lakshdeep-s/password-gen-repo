@@ -8,3 +8,6 @@ def display_menu():
     print("'1' For Creating a Password.")
     print("'q' For Exiting app.")
     print("Under Development....\n------------")
+
+def exit_message():
+    print("-------\nThankyou !\n-------")
