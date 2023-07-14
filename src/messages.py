@@ -6,4 +6,5 @@ def welcome_message():
 def display_menu():
     print("------------\nWhat would you like to do ?\n")
     print("'1' For Creating a Password.")
+    print("'q' For Exiting app.")
     print("Under Development....\n------------")
