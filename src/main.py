@@ -1,17 +1,26 @@
 from messages import *
 from utl_funcs import *
+from generator import *
 
 welcome_message()
-display_menu()
-choice = str()
+relaunch = 1
 
-while choice.upper() != 'Q':
+while relaunch:
+    display_menu()
     choice = get_userchoice()
     
     if choice == '1':
-        pass
+        password = pass_generator()
+        print('Your Password is : ', password)
+        
+    elif choice.upper() == 'Q':
+        break
     
-    if choice.upper() == 'Q':
-        exit_message()
-        exit(1)
-    print("Some Test")
+    relaunch_prompt()
+    choice = get_userchoice()
+    if choice.upper() == 'N':
+        relaunch = 0
+    elif choice.upper() != "Y":
+        print("Unrecognized Entry! exiting...")
+        break
+exit_message()
