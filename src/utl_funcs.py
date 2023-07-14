@@ -3,10 +3,11 @@ def get_userchoice():
     choice = input()
     return choice
 
-def validate_pass_len(len):
-    if len < 8 or len > 14:
+def validate_pass_len(length):
+    if length < 8 or length > 14:
         return -1
-    return 1
+    else :
+        return 1
 
 def random_case(string):
     result = ""
