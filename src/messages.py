@@ -10,4 +10,4 @@ def display_menu():
     print("Under Development....\n------------")
 
 def exit_message():
-    print("-------\nThankyou !\n-------")
+    print("-------\nProgram Ended, Visit Again !\n-------")
