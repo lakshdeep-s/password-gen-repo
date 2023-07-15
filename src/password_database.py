@@ -25,8 +25,7 @@ class Password:
         
     @classmethod
     def display_all_pass(cls):
-        times = list(cls.database.keys())
-        for time in times:
-            print("Password : ", cls.database[time], " Time : ", time)
+        for time, password in cls.database:
+            print("Password:", password, "Time:", time)
             
     
